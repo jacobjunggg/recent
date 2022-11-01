@@ -1,9 +1,11 @@
 import 'dart:math';
-
+import 'Position.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:instagram/search_focus.dart';
 import 'package:quiver/iterables.dart';
+
+
 class search_main extends StatefulWidget {
   const search_main({Key? key}) : super(key: key);
 
@@ -19,6 +21,9 @@ class _search_mainState extends State<search_main> with TickerProviderStateMixin
     super.initState();
     tabController = TabController(length: 2, vsync: this);
   }
+
+
+
 
   Widget Tab_Menu() {
     return TabBar(indicatorColor: Colors.black,
@@ -61,8 +66,31 @@ class _search_mainState extends State<search_main> with TickerProviderStateMixin
 
       child: TabBarView(controller: tabController,
         children: [
-           Container(child: Text('sj'),),
-            Container(child: Text('sf'),)
+          Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+              ElevatedButton(onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) =>Byposition()),
+                ); }, child: Text('Pitcher', ), ),
+              ElevatedButton(onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) =>Byposition()),
+                );
+              }, child: Text('Infield', ), ),
+              ElevatedButton(onPressed: (){Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Byposition()),
+              );}, child: Text('Outfield', ), ),
+              ElevatedButton(onPressed: (){Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Byposition()),
+              );}, child: Text('Catcher', ), ),
+            ],
+          ),
+         listViewName()
           ],
      ),
     );
