@@ -81,8 +81,8 @@ Widget Followers (String title, int value){
 
 Widget Tab_Menu (){
 
-    return TabBar(indicatorColor: Colors.black,indicatorWeight: 1, controller : tabController,tabs: [Container( padding: EdgeInsets.symmetric(vertical: 5),child: Icon(Icons.access_alarm, color: Colors.black,)),
-      Container( padding: EdgeInsets.symmetric(vertical: 5), child: Icon(Icons.access_alarm, color: Colors.black,)),
+    return TabBar(indicatorColor: Colors.black,indicatorWeight: 1, controller : tabController,tabs: [Container( padding: EdgeInsets.symmetric(vertical: 5),child: Text('My Posts', style:  TextStyle( color:Colors.black)),),
+      Container( padding: EdgeInsets.symmetric(vertical: 5), child: Text('My info', style: TextStyle( color:Colors.black),),)
 
     ] );
 }

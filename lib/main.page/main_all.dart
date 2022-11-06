@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:instagram/home.dart';
-import 'package:instagram/search.dart';
-import 'package:instagram/search_social.dart';
-import 'style.dart';
+import 'package:instagram/main.page/home.dart';
+import 'package:instagram/Search/search.dart';
+import 'package:instagram/social/search_social.dart';
+import '../style.dart';
 
 
 void main() {
   runApp(MaterialApp(
-    theme: theme,
+      theme: theme,
       home: MyApp()
   )
   );
@@ -15,7 +15,7 @@ void main() {
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
-  
+
   @override
   State<MyApp> createState() => _MyAppState();
 }
@@ -35,7 +35,7 @@ class _MyAppState extends State<MyApp> {
       Container(
           child:
           [profile(child: Text('home')),
-           const search_main(),
+            const search_main(),
             const Search_social(),
             Container(child: Text('target')),
             Container(child: Text('Chat'))] [tab]),
@@ -75,7 +75,6 @@ class _MyAppState extends State<MyApp> {
   }
 
 }
-
 
 
 

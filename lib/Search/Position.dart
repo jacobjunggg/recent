@@ -1,3 +1,5 @@
+import 'dart:js';
+import 'search.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -121,4 +123,35 @@ Widget listViewName (){
 
         );
       });
+
+
 }
+Widget listViewName_TopSchool (){
+  return ListView.builder(
+      itemCount: 15,
+      itemBuilder: (c,i){
+        return Padding(
+          padding: const EdgeInsets.all(8.0),
+
+          child: ListTile(
+            leading: Image.asset('v.png'),
+            title: TextButton(
+              onPressed: (){},
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Text(i.toString()),
+                  Text('. 최근 전적'),
+
+                ],
+              ),
+            ),
+            trailing:
+            TextButton(onPressed:(){}, child: Text('School n raking'),),
+
+
+          ),
+
+        );
+      });}
+

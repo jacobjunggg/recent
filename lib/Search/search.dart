@@ -2,7 +2,7 @@ import 'dart:math';
 import 'Position.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:instagram/search_focus.dart';
+import 'package:instagram/Search/search_focus.dart';
 import 'package:quiver/iterables.dart';
 
 
@@ -90,7 +90,7 @@ class _search_mainState extends State<search_main> with TickerProviderStateMixin
               );}, child: Text('Catcher', ), ),
             ],
           ),
-         listViewName()
+          listViewName_TopSchool ()
           ],
      ),
     );
