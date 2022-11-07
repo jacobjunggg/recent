@@ -6,8 +6,9 @@ import '../style.dart';
 import 'main_screen.dart';
 import 'main_all.dart';
 import 'package:firebase_core/firebase_core.dart';
-void main() {
+void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+
   Firebase.initializeApp();
   runApp(MaterialApp(
     theme: theme,
