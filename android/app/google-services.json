@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "345278241633",
+    "project_id": "world-recruit-5ab54",
+    "storage_bucket": "world-recruit-5ab54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345278241633:android:a5503d57c1e01a1ca7c320",
+        "android_client_info": {
+          "package_name": "com.example.instagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345278241633-hj7suid6f4jusojpsks73eejh1if01ua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_6At_1ZT8sb7Tq_3FzfrG_1L_ZM3vQtE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345278241633-hj7suid6f4jusojpsks73eejh1if01ua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

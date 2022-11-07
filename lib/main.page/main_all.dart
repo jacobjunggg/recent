@@ -5,14 +5,7 @@ import 'package:instagram/social/search_social.dart';
 import '../style.dart';
 
 
-void main() {
-  runApp(MaterialApp(
-      theme: theme,
-      home: MyApp()
-  )
-  );
-}
-
+//홈화면
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
