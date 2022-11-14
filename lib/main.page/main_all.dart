@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:instagram/main.page/home.dart';
+import 'package:instagram/main.page/main_home.dart';
 import 'package:instagram/Search/search.dart';
 import 'package:instagram/social/search_social.dart';
 import '../style.dart';
-
+import 'package:firebase_auth/firebase_auth.dart';
 
 //홈화면
 class MyApp extends StatefulWidget {
@@ -14,8 +14,30 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  var tab = 0;
 
+  var tab = 0;
+  final _authentication = FirebaseAuth.instance;
+  User? loggedUser;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getCurrentUser();
+
+  }
+
+  void getCurrentUser(){
+    try{
+    final user = _authentication.currentUser;
+    if(user!= null){
+      loggedUser = user;
+      print(loggedUser!.email);
+    }
+    }catch(e){
+      print(e);
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

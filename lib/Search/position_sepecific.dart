@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'Position.dart';
+import 'search_by_Position.dart';
 
 class position_sepecific extends StatefulWidget {
   const position_sepecific({Key? key}) : super(key: key);
@@ -30,13 +30,8 @@ class _position_sepecificState extends State<position_sepecific> with TickerProv
                   child: Icon(Icons.sports_baseball_sharp),)
 
               ]),
-        );
+        ), );
 
 
     }
-  }
-  Widget otherone (){
-  return TabBarView(
-   controller: TabController,
-    children: listViewName(),);
   }
